@@ -54,5 +54,11 @@ def logout():
     
     return redirect(url_for("login"))
 
+@app.route("/fairygrowth")
+def fairygrowth():
+    return render_template("fairygrowth.html")
+
+
+
 if __name__ == "__main__":
     app.run()
